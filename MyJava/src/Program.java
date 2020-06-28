@@ -1,24 +1,27 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Program {
+	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-		Scanner scanner = new Scanner(System.in);
-		String in = scanner.nextLine();
+		File file = new File("/home/borisjokic/eclipse-workspace/MyJava/src/myFile.txt");
+		Scanner scanner = new Scanner(file);
+		List<Integer> num = new ArrayList<Integer>();
 		
-		if (in.equals("something")) {
-			System.out.println("hello you");
-		}
-		else if (in.equals("nothing")) {
-			System.out.println("hello ...");
-		}
-		else {
-			System.out.println("call me!");
+		while(scanner.hasNextLine()) {
+			int element = scanner.nextInt();
+			System.out.println(element);
+			num.add(element);
 		}
 		
 		scanner.close();
-		
+		System.out.println(Arrays.toString(num.toArray()));
 	}
 
 
