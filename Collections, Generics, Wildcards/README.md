@@ -1,1 +1,1 @@
-I was created simple program tath uses generics, collections and wildcards. In this case Employee is superclass and RetiredEmployee extends it. This program accepts a collection of RetiredEmployee objects and copies it into a collection of Employee objects.
+I was created a simple program that uses generics, collections and wildcards. In this case Employee is superclass and RetiredEmployee extends it. This program accepts a collection of RetiredEmployee objects and copies it into a collection of Employee objects.
