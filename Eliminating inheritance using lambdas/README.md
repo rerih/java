@@ -1,0 +1,1 @@
+In this example method validatePayIncrease() takes lambda expression as one parameter. Inheritance and polymorphism is replaced with lambda expressions which promote a functional style of programming.
