@@ -20,7 +20,7 @@ public abstract class Person {
 	// abstract method
 	public abstract boolean increasePay(int percent);
 	
-    // method uses the abstract method. By the time the concrete class is instantiated, 
+        // method uses the abstract method. By the time the concrete class is instantiated, 
 	// the method increasePay()  will be implemented. 
 	public void promote(int percent) {
 		System.out.println("Promoting a worker...");
